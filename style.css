@@ -82,7 +82,10 @@ header {
     font-size: 80%;
 }
 
-
+form {
+    display: flexbox;
+    flex-direction: column;
+}
 
 
 
@@ -173,6 +176,7 @@ hr {
 
 #text-container ul {
     margin-top: -2px;
+    height: fit-content;
 }
 
 #aboutText {
@@ -204,6 +208,7 @@ justify-content: center;
     padding: 5px;
     background-image: linear-gradient(to bottom right, white, silver, gray)
 
+
 }
 
 #contact #ulContainer {
@@ -212,6 +217,13 @@ justify-content: center;
    height: 50px;
 
 }
+
+
+
+
+
+
+
 
 #projects {
     display: flex;
@@ -229,6 +241,8 @@ justify-content: center;
     flex-direction: column;
     background-color: sandybrown;
     width: 90%;
+    justify-content: center;
+    align-items: center;
 }
 
 #projectItem #projectTitle {
@@ -237,9 +251,9 @@ justify-content: center;
     box-shadow: 4px 4px 2px grey;
     background-color: beige;
     border: 2px solid black;
-    width: 35%;
+    width: 94%;
     padding: 5px;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     display: flex;
 
@@ -254,6 +268,7 @@ justify-content: center;
     text-align: justify;
     text-indent: 3em;
     height: 100%;
+    width: 100%;
 }
 
 #projectItem a {
@@ -261,8 +276,8 @@ justify-content: center;
     text-decoration-line: none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
