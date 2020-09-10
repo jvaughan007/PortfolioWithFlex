@@ -1,0 +1,351 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+#container { 
+    background-image: url("images\beach.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+    
+}
+
+
+header {
+    justify-content: center;
+    align-items: center;
+    background-color:burlywood;
+    margin: 10px 6px 50px 10px;
+    box-shadow: 4px 4px 2px grey;
+    border-radius: 20px;
+    min-width: 280px;
+    border: black;
+    border-style: solid;
+    width: 85%;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#name {
+    font-family: unset;
+    color:black;
+    text-shadow: -2px -2px 0 silver;
+    flex: 1;
+    text-decoration-line: underline;
+    
+}
+
+#description {
+    font-family: unset;
+    color:black;
+    text-shadow: -2px -2px 0 silver; 
+    flex: 1;
+    margin-top: -20px;
+    
+}
+
+#navLinks {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro-btn, #about-btn, #projects-btn, #contact-btn {
+    font-weight: bold;
+    font-family: arial, sans-serif;
+    border-radius: 6px;
+    color:black;
+    background-image: linear-gradient(to bottom right, white, aquamarine, aqua);
+    box-shadow: 4px 4px 2px grey;
+    border: none;
+    margin: -12px 7px 15px 7px;
+    justify-content: center;
+    text-decoration: none;
+    padding: 3px;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    font-size: 80%;
+}
+
+
+
+
+
+/* This is where all the "meat" of the website begins! */
+
+#meat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:burlywood;
+    margin: 10px 6px 50px 10px;
+    box-shadow: 4px 4px 2px grey;
+    border-radius: 20px;
+    width: 90%;
+    border: black;
+    border-style: solid;
+}
+
+#profilePic-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#profilePic {
+    border: 2px solid black;
+    border-radius: 30px;
+    box-shadow: 4px 4px 2px grey;
+    width: 50%;
+    margin-top: 1em;
+}
+
+#text-container, #about, #contact, #projects {
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px grey;
+    background-color: beige;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 5px 10px 5px;
+    align-items: center;
+}
+
+h3 {
+    border: 2px solid black;
+    box-shadow: 4px 4px 2px grey;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: sandybrown;
+}
+
+p {
+    display: flex;
+    margin: 0 30px 15px 30px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+#text-container #uiSub  {
+    font-weight: bolder; 
+    color:black; 
+    -webkit-text-stroke: black 1px; 
+    font-size: 12px; 
+    text-align: center;
+    text-indent: 0px;
+    margin: 0 0 -5px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    border-color: black;
+    width: 80%;
+}
+
+#ulContainer {
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px grey;
+    padding: 3px;
+    margin: 0 5px 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: sandybrown;
+}
+
+#text-container ul {
+    margin-top: -2px;
+}
+
+#aboutText {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+#contact #ulContainer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    list-style: none;
+    width: 100%;
+    
+
+}
+
+
+
+#contact #ulContainer ul li a {
+    color: black;
+    text-decoration-line: none;
+    align-content: space-between;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-image: linear-gradient(to bottom right, white, silver, gray)
+
+}
+
+#contact #ulContainer {
+   width: 90%;
+   align-items: center;
+   height: 50px;
+
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+#projectItem {
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px grey;
+    padding: 3px;
+    margin: 0 5px 10px 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: sandybrown;
+    width: 90%;
+}
+
+#projectItem #projectTitle {
+    margin-bottom: 0;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px grey;
+    background-color: beige;
+    border: 2px solid black;
+    width: 35%;
+    padding: 5px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+
+}
+
+#projectDescription {
+    margin: 0 0 10px 0;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px grey;
+    background-color: beige;
+    border: 2px solid black;
+    text-align: justify;
+    text-indent: 3em;
+    height: 100%;
+}
+
+#projectItem a {
+    color: black;
+    text-decoration-line: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-image: linear-gradient(to bottom right, white, silver, gray);
+    margin-bottom: 5px;
+    
+    
+
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color:burlywood;
+    border: 2px solid black;
+    box-shadow: 4px 2px 2px grey;
+    border-radius: 5px;
+    width: 95%;
+    height: 50px;
+}
+
+
+
+
+
+@media all and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 5px 50px 5px;
+    }
+
+    #title {
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        margin: 0 0 0 15px;
+
+    }
+
+    #navLinks {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        align-content: flex-end;
+        margin-top: 22px;
+        padding: 10px;
+        
+    }
+
+    #intro-btn:hover, #about-btn:hover, #projects-btn:hover, #contact-btn:hover, a:hover {
+        font-weight: bold;
+        font-style: italic;
+        text-decoration-line: underline;
+    } 
+
+    #intro-btn, #about-btn, #projects-btn, #contact-btn {
+        padding: 0;
+        width: 100px
+    }
+
+    #meat {
+        justify-content: space-evenly;
+    }
+
+    #contact #ulContainer {
+        width: 80%;
+    }
+
+    #contact #ulContainer ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+
+    #contact #ulContainer ul li a {
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 5px;
+        background-image: linear-gradient(to bottom right, white, silver, gray) ;
+    }
+}

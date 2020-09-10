@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio with 'Flexbox'</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+
+  <div id="container">
+    <body>
+      <!--Header below: Needs to include nav buttons. the #intro & #about divs can stay on this page. Consider moving #portfolio and #contact each to their own page-->
+
+      <header>
+        <div id="title">
+          <h1 id="name">Joshua Vaughan</h1>
+          <h2 id="description">Software Engineer</h2>
+        </div>
+        
+        <div id="navLinks">
+          <a href="index.html#intro" id="intro-btn">
+              Intro
+          </a>
+          <a href="index.html#about" id="about-btn">
+              About
+          </a>
+          <a href="index.html#contact" id="contact-btn">
+              Contact
+          </a>
+          <a href="index.html#projects" id="projects-btn">
+            Projects
+        </a>
+        </div>
+      
+      </header>
+
+      <!-- main element signifies beginning of the "meat" of the website. -->
+
+      <main id="meat">
+        <!--Below is where the "intro" section is located. -->
+
+        <div id="intro">
+          <div id="profilePic-container">
+            <img
+              src="images/profile-pic.jpg"
+              alt="Picture of Josh"
+              id="profilePic"
+            />
+          </div>  
+
+          <div id="text-container">
+            <h3 id="introduction">Introduction</h3>
+            <p>My name is Joshua Vaughan, and I am a Software Engineering student at Thinkful out of Galveston, TX!</p>
+            <div id="ulContainer">
+              <p id="uiSub">Being a lifelong gaming enthusiast, I enjoy...</p>
+              <hr>
+              <ul style="display: flex; flex-direction: column;">
+                <li>Working with a team to achieve a common goal</li>
+                <li>Growing and learning from difficult objectives</li>
+                <li>Applying experience to help better the team and achieve victory!</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+
+        <!-- Below: Where the "about me" section is.-->
+
+        <div id="about">
+          <h3 id="sub-header">About Me</h3>
+          <div id="aboutTxt">
+            <p>I began my journey to code during the COVID-19 crisis. After completing a contract position in April of 2020, I decided to pass the time by self teaching myself web development through FreeCodeCamp and other free resources. This idea came to me when a few friends of mine decided they wanted to create a mobile app. Needless to say, it was the only excuse I needed to learn to code - a chance to work with some awesome people as part of a team to create something useful!</p>
+            <p>One day, during a little longboarding break from my free learning resources, I stumbed upon an ad for Thinkful while scrolling through facebook on my phone and decided to look in to it. After researching for a while, I became determined to make a career change.</p>
+            <p>Since that day, I have fallen in love with coding - from designing gorgeous and intuitive front-ends, to efficient and functional back-end. The opportunity to create things from scratch and develop applications and websites that are needed in todays world allows me the unique opportunity to solve problems and provide an avenue to provide a service to those around me!</p>
+            <p>If you are seeking a new software developer or engineer, please feel free to reach out! I am excited to continue on this path to work in the industry I have now found so much passion for! I am willing and able, currently, to assist in any and all web-development projects. I look forward to hearing from you, and many thanks for checking out my online portfolio!</p>
+          </div>
+        </div>
+        
+        
+        <div id="contact">
+          <h3 id="sub-header">Contact Joshua</h3>
+          <p>Please feel free to contact me by clicking any and/or all of the links below!</p>
+          <div id="ulContainer">
+            <ul>
+              <li><a href="https://www.github.com/jvaughan007" target="_blank">My Github</a></li>
+              <li><a href="https://www.linkedin.com/in/joshua-vaughan-4b24331a1/" target="_blank">LinkedIn</a></li>
+              <li><a href="mailto:jvaughan007@yahoo.com">Email</a>
+            </ul>
+          </div>
+        </div>
+
+        <div id="projects">
+          <h3 id="sub-header">Projects</h3>
+          <div id="projectItem">
+            <h2 id="projectTitle">Project Title</h2>
+            <hr>
+            <div id="projectDescription">Project Description</div>
+            <a href="#" target="_blank">Project Repo Link</a>
+            <a href="#" target="_blank">Live Project Link</a>
+          </div>
+          <div id="projectItem">
+            <h2 id="projectTitle">Project Title</h2>
+            <hr>
+              <div id="projectDescription">Project Description </div>
+              <a href="#" target="_blank">Project Repo Link</a>
+              <a href="#" target="_blank">Live Project Link</a>
+          </div>
+          <div id="projectItem">
+            <h2 id="projectTitle">Project Title</h2>
+            <hr>
+            <div id="projectDescription">Project Description</div>
+            <a href="#" target="_blank">Project Repo Link</a>
+            <a href="#" target="_blank">Live Project Link</a>
+          </div>
+          <div id="projectItem">
+            <h2 id="projectTitle">Project Title</h2>
+            <hr>
+            <div id="projectDescription">Project Description</div>
+            <a href="#" target="_blank">Project Repo Link</a>
+            <a href="#" target="_blank">Live Project Link</a>
+          </div>
+        </div>
+      </main>
+
+      <!--Footer is below.-->
+
+      <footer>&copyJoshua Vaughan</footer>
+    </body>
+  </div>
+</html>
