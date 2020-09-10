@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Page</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <div id="container">
+    <body>
+      <!--Header below: Needs to include nav buttons. the #intro & #about divs can stay on this page. Consider moving #portfolio and #contact each to their own page-->
+
+      <header>
+        <div id="title">
+          <h1 id="name">Joshua Vaughan</h1>
+          <h2 id="description">Software Engineer</h2>
+        </div>
+
+        <div id="navLinks">
+          <a href="index.html#intro" id="intro-btn"> Intro </a>
+          <a href="index.html#about" id="about-btn"> About </a>
+          <a href="index.html#contact" id="contact-btn"> Contact </a>
+          <a href="index.html#projects" id="projects-btn"> Projects </a>
+        </div>
+      </header>
+      <div id="formContainer">
+        <form>
+          <div id="contactInfo">
+            <!-- Name field -->
+            <div id="name-and-email">
+              <label for="full-name">Name:</label>
+              <input
+                id="full-name"
+                type="text"
+                name="name"
+                autofocus="on"
+                required
+              />
+              <!-- Email field -->
+              <label for="email">Email:</label>
+              <input id="email" type="text" required />
+            </div>
+            <!-- Div to straighten out the flexbox -->
+            <div id="phoneInfo">
+              <!-- Phone number -->
+              <div id="phoneNumber">
+                <label for="phone-number">Phone Number:</label>
+                <input id="phone-number" type="text" />
+              </div>
+              <!-- Type of Phone -->
+              <div id="radio-btn">
+                <h4 id="phoneType">Phone Type:</h4>
+                <input type="radio" name="phoneType" value="cell" />
+                <label for="cell">Cell</label>
+                <input type="radio" name="phoneType" value="ome" />
+                <label for="home">Home</label>
+              </div>
+            </div>
+          </div>
+          <div id="inquiryInfo">
+            <!-- Drop Down -->
+            <div id="dropDown">
+              <h4 id="inquiryType">Inquiry Type</h4>
+              <select name="inquiries" size="1">
+                <option value="general">General</option>
+                <option value="technical">Technical</option>
+                <option value="hire-me">Hire Me</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <!-- Text Area -->
+            <div id="textBox">
+              <label for="inquiryMessage">Type Inquiry Here:</label>
+              <textarea name="message" id="inquiryMessage"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+    </body>
+  </div>
+</html>
